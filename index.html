@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#f5f8fc">
+<title>Dream Billionaire</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="hero"><img src="images/hero.webp" alt="" onerror="this.remove()"></div>
+<header class="top">
+  <div class="brand" id="brand">Dream Billionaire</div>
+  <div class="label">YOUR BALANCE</div>
+  <div class="balance" id="balance">$0</div>
+  <div class="tagline">What would your dream life look like?</div>
+  <nav class="cats" id="cats" aria-label="Categories"></nav>
+</header>
+
+<main class="grid" id="grid"></main>
+
+<section class="life" id="life">
+  <h2>MY BILLIONAIRE LIFE</h2>
+  <div class="sum">
+    <div><span>Starting Fortune</span><b id="sStart"></b></div>
+    <div><span>Total Spent</span><b id="sSpent"></b></div>
+    <div><span>Money Left</span><b id="sLeft"></b></div>
+    <div><span>Total Items Purchased</span><b id="sItems"></b></div>
+  </div>
+  <h3>Everything You Own</h3>
+  <ul class="owned" id="owned"></ul>
+  <h3>Fun Statistics</h3>
+  <div class="sum" id="stats"></div>
+  <button class="reset" id="reset">START OVER</button>
+</section>
+
+<div class="toast" id="toast" aria-live="polite"><b></b><span></span></div>
+
+<div class="welcome" id="welcome" hidden>
+  <div class="box">
+    <h2 id="wTitle">Welcome back</h2>
+    <p id="welcomeMsg"></p>
+    <button class="go" id="cont">CONTINUE DREAM LIFE</button>
+    <button class="ghost" id="fresh">START OVER</button>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
